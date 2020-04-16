@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/inicio/{id}','Ejemplo3Controller@index');
+
+
+/*
 //Crear una nueva ruta
 
 Route::get('/sobrenosotros', function () {
