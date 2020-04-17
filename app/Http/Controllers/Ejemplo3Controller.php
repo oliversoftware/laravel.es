@@ -13,11 +13,12 @@ class Ejemplo3Controller extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id)
     {
         //
 
-        return 'Estás en la página de inicio del sitio';
+
+        return 'Estás en la página de inicio del sitio y el valor del parametro es '.$id;
     }
 
     /**
@@ -28,6 +29,8 @@ class Ejemplo3Controller extends Controller
     public function create()
     {
         //
+
+        return ('Estas en el método CREATE');
     }
 
     /**
